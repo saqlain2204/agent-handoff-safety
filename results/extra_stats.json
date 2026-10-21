@@ -1,0 +1,857 @@
+{
+  "gemma": {
+    "n_rows": 1000,
+    "n_hazard": 800,
+    "n_explicit": 459,
+    "n_infer": 341,
+    "n_control": 200,
+    "h1_explicit": {
+      "fact": {
+        "k": 228,
+        "n": 459,
+        "rate": 0.49673202614379086,
+        "lo": 0.45120786016195075,
+        "hi": 0.5423104406995103
+      },
+      "ban": {
+        "k": 418,
+        "n": 459,
+        "rate": 0.9106753812636166,
+        "lo": 0.8810600680145412,
+        "hi": 0.9334734570618565
+      },
+      "mcnemar": {
+        "b": 16,
+        "c": 206,
+        "n_discordant": 222,
+        "p": 3.074101465287277e-43,
+        "log10p": -42.51
+      }
+    },
+    "h2_hazard": {
+      "pipeline": {
+        "k": 627,
+        "n": 800,
+        "rate": 0.78375,
+        "lo": 0.7539014746477049,
+        "hi": 0.810886413911434
+      },
+      "solo": {
+        "k": 677,
+        "n": 800,
+        "rate": 0.84625,
+        "lo": 0.8196043554237468,
+        "hi": 0.8695861517607532
+      },
+      "pipeline_only_safe": 1,
+      "solo_only_safe": 51,
+      "mcnemar": {
+        "b": 1,
+        "c": 51,
+        "n_discordant": 52,
+        "p": 2.353672812205332e-14,
+        "log10p": -13.63
+      }
+    },
+    "h3_hazard": {
+      "pipeline": {
+        "k": 627,
+        "n": 800,
+        "rate": 0.78375,
+        "lo": 0.7539014746477049,
+        "hi": 0.810886413911434
+      },
+      "interactive": {
+        "k": 656,
+        "n": 800,
+        "rate": 0.82,
+        "lo": 0.7918675708878629,
+        "hi": 0.8450738364739854
+      },
+      "harm": 1,
+      "rescue": 30,
+      "mcnemar": {
+        "b": 1,
+        "c": 30,
+        "n_discordant": 31,
+        "p": 2.9802322387695312e-08,
+        "log10p": -7.53
+      }
+    },
+    "h2_explicit": {
+      "pipeline": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.991699968196463,
+        "hi": 1.0
+      },
+      "solo": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.991699968196463,
+        "hi": 1.0
+      },
+      "pipeline_only_safe": 0,
+      "solo_only_safe": 0,
+      "mcnemar": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "log10p": 0.0
+      }
+    },
+    "h3_explicit": {
+      "pipeline": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.991699968196463,
+        "hi": 1.0
+      },
+      "interactive": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.991699968196463,
+        "hi": 1.0
+      },
+      "harm": 0,
+      "rescue": 0,
+      "mcnemar": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "log10p": 0.0
+      }
+    },
+    "h2_infer": {
+      "pipeline": {
+        "k": 168,
+        "n": 341,
+        "rate": 0.49266862170087977,
+        "lo": 0.4399823620265047,
+        "hi": 0.545518227229548
+      },
+      "solo": {
+        "k": 218,
+        "n": 341,
+        "rate": 0.6392961876832844,
+        "lo": 0.5870364437777578,
+        "hi": 0.6884523603572421
+      },
+      "pipeline_only_safe": 1,
+      "solo_only_safe": 51,
+      "mcnemar": {
+        "b": 1,
+        "c": 51,
+        "n_discordant": 52,
+        "p": 2.353672812205332e-14,
+        "log10p": -13.63
+      }
+    },
+    "h3_infer": {
+      "pipeline": {
+        "k": 168,
+        "n": 341,
+        "rate": 0.49266862170087977,
+        "lo": 0.4399823620265047,
+        "hi": 0.545518227229548
+      },
+      "interactive": {
+        "k": 197,
+        "n": 341,
+        "rate": 0.5777126099706745,
+        "lo": 0.5247074682749258,
+        "hi": 0.6289862856109163
+      },
+      "harm": 1,
+      "rescue": 30,
+      "mcnemar": {
+        "b": 1,
+        "c": 30,
+        "n_discordant": 31,
+        "p": 2.9802322387695312e-08,
+        "log10p": -7.53
+      }
+    },
+    "interactive_hazard_wilson": {
+      "k": 656,
+      "n": 800,
+      "rate": 0.82,
+      "lo": 0.7918675708878629,
+      "hi": 0.8450738364739854
+    },
+    "cluster_boot_pipeline_minus_solo": {
+      "diff": -0.0625,
+      "lo": -0.07970112079701121,
+      "hi": -0.04630788485607009
+    },
+    "cluster_boot_interactive_minus_pipeline": {
+      "diff": 0.03625,
+      "lo": 0.02386934673366834,
+      "hi": 0.049937578027465665
+    },
+    "n_drug_clusters": 459,
+    "explicit_fact_triage": {
+      "k": 228,
+      "n": 459,
+      "rate": 0.49673202614379086,
+      "lo": 0.45120786016195075,
+      "hi": 0.5423104406995103
+    },
+    "explicit_fact_note": {
+      "k": 228,
+      "n": 459,
+      "rate": 0.49673202614379086,
+      "lo": 0.45120786016195075,
+      "hi": 0.5423104406995103
+    },
+    "explicit_ban_triage": {
+      "k": 459,
+      "n": 459,
+      "rate": 1.0,
+      "lo": 0.991699968196463,
+      "hi": 1.0
+    },
+    "explicit_ban_note": {
+      "k": 418,
+      "n": 459,
+      "rate": 0.9106753812636166,
+      "lo": 0.8810600680145412,
+      "hi": 0.9334734570618565
+    },
+    "fact_note_given_fact_triage": {
+      "k": 227,
+      "n": 228,
+      "rate": 0.9956140350877193,
+      "lo": 0.9755781171086069,
+      "hi": 0.9992253694097744
+    },
+    "ban_note_given_ban_triage": {
+      "k": 418,
+      "n": 459,
+      "rate": 0.9106753812636166,
+      "lo": 0.8810600680145412,
+      "hi": 0.9334734570618565
+    },
+    "sensitivity": {
+      "explicit_ban_triage_norm": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.991699968196463,
+        "hi": 1.0
+      },
+      "explicit_ban_note_norm": {
+        "k": 449,
+        "n": 459,
+        "rate": 0.9782135076252724,
+        "lo": 0.9603647163056634,
+        "hi": 0.9881239243005397
+      },
+      "hazard_ban_triage_norm": {
+        "k": 641,
+        "n": 800,
+        "rate": 0.80125,
+        "lo": 0.7721855193265558,
+        "hi": 0.8274351024476844
+      },
+      "hazard_ban_note_norm": {
+        "k": 616,
+        "n": 800,
+        "rate": 0.77,
+        "lo": 0.7395886171244691,
+        "hi": 0.7978306953370905
+      },
+      "h1_norm_mcnemar": {
+        "b": 2,
+        "c": 223,
+        "n_discordant": 225,
+        "p": 9.431027558737838e-64,
+        "log10p": -63.03
+      },
+      "hyphen_cases_explicit": 254,
+      "ban_note_recovered_by_norm": 31,
+      "fact_excl_drug_n": 430,
+      "fact_excl_drug_triage": {
+        "k": 1,
+        "n": 430,
+        "rate": 0.002325581395348837,
+        "lo": 0.00041062968189018063,
+        "hi": 0.013054192502058984
+      },
+      "fact_excl_drug_note": {
+        "k": 2,
+        "n": 430,
+        "rate": 0.004651162790697674,
+        "lo": 0.0012764179322508895,
+        "hi": 0.01679838171812842
+      },
+      "fact_excl_drug_ban_note_norm": {
+        "k": 420,
+        "n": 430,
+        "rate": 0.9767441860465116,
+        "lo": 0.9577254386587046,
+        "hi": 0.9873199419594747
+      },
+      "h1_excl_drug_norm_mcnemar": {
+        "b": 1,
+        "c": 419,
+        "n_discordant": 420,
+        "p": 3.109667198470236e-124,
+        "log10p": -123.51
+      },
+      "explicit_with_drug_token_in_facts": 226,
+      "ban_note_norm_given_triage_norm": {
+        "k": 449,
+        "n": 459,
+        "rate": 0.9782135076252724,
+        "lo": 0.9603647163056634,
+        "hi": 0.9881239243005397
+      },
+      "fact_excl_note_given_triage": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      }
+    },
+    "mechanism": {
+      "rejected": 358,
+      "rejected_given_pipeline_safe": 328,
+      "pipeline_safe_total": 627,
+      "harmful_flips": 1,
+      "flip_review_rejected": 1,
+      "flip_pipeline_hold": 1,
+      "flip_final_default": 0,
+      "flip_final_unparsed": 1,
+      "flip_review_recommended_safe": 1,
+      "flip_review_recommended_default": 0,
+      "flip_review_recommended_none": 0,
+      "flip_modes": {
+        "explicit": 0,
+        "infer": 1
+      },
+      "rescues": 30,
+      "unsafe_pipeline_total": 173,
+      "unsafe_proposals_rejected": 30,
+      "unsafe_proposals": 173,
+      "safe_proposals_rejected": 328,
+      "safe_proposals": 627,
+      "rejected_safe_final_safe": 327,
+      "rejected_safe_final_same": 61
+    },
+    "controls_mcnemar_pipeline_vs_solo": {
+      "b": 2,
+      "c": 0,
+      "n_discordant": 2,
+      "p": 0.5,
+      "log10p": -0.3
+    },
+    "controls": {
+      "pipeline_default": {
+        "k": 199,
+        "n": 200,
+        "rate": 0.995,
+        "lo": 0.9722256001302286,
+        "hi": 0.999116854010634
+      },
+      "interactive_default": {
+        "k": 198,
+        "n": 200,
+        "rate": 0.99,
+        "lo": 0.9642775148038205,
+        "hi": 0.9972533993962251
+      },
+      "solo_default": {
+        "k": 197,
+        "n": 200,
+        "rate": 0.985,
+        "lo": 0.9568335194437211,
+        "hi": 0.9948858548155076
+      },
+      "pipeline_hold": 1,
+      "pipeline_no": 0,
+      "interactive_hold": 1,
+      "solo_hold": 1
+    },
+    "triage_flag_hazard": {
+      "k": 626,
+      "n": 800,
+      "rate": 0.7825,
+      "lo": 0.7525984324613131,
+      "hi": 0.8097014037253187
+    },
+    "triage_flag_explicit": {
+      "k": 459,
+      "n": 459,
+      "rate": 1.0,
+      "lo": 0.991699968196463,
+      "hi": 1.0
+    },
+    "triage_flag_infer": {
+      "k": 167,
+      "n": 341,
+      "rate": 0.4897360703812317,
+      "lo": 0.43708786619338746,
+      "hi": 0.5426129587650862
+    },
+    "triage_flag_control": {
+      "k": 1,
+      "n": 200,
+      "rate": 0.005,
+      "lo": 0.0008831459893662054,
+      "hi": 0.02777439986977148
+    },
+    "infer_unsafe_pipeline": 173,
+    "infer_unsafe_pipeline_solo_safe": 51,
+    "infer_unsafe_pipeline_triage_flagged": 0,
+    "infer_unsafe_pipeline_triage_not_flagged": 173,
+    "hazard_pipeline_unsafe_solo_safe": 51,
+    "hazard_both_unsafe": 122,
+    "hazard_pipeline_safe_solo_unsafe": 1,
+    "triage_flagged_n": 626,
+    "triage_flagged_pipeline_unsafe": 0,
+    "triage_not_flagged_n": 174,
+    "triage_not_flagged_pipeline_unsafe": 173,
+    "mean_seconds_per_case": 44.71403,
+    "total_hours": 12.42056388888889,
+    "unparsed": {
+      "pipeline": 0,
+      "interactive": 1,
+      "solo": 0
+    }
+  },
+  "qwen": {
+    "n_rows": 1000,
+    "n_hazard": 800,
+    "n_explicit": 459,
+    "n_infer": 341,
+    "n_control": 200,
+    "h1_explicit": {
+      "fact": {
+        "k": 331,
+        "n": 459,
+        "rate": 0.7211328976034859,
+        "lo": 0.6784011902415898,
+        "hi": 0.7601937847995475
+      },
+      "ban": {
+        "k": 347,
+        "n": 459,
+        "rate": 0.7559912854030502,
+        "lo": 0.7146797073886145,
+        "hi": 0.7930533917969386
+      },
+      "mcnemar": {
+        "b": 73,
+        "c": 89,
+        "n_discordant": 162,
+        "p": 0.23850049967578146,
+        "log10p": -0.62
+      }
+    },
+    "h2_hazard": {
+      "pipeline": {
+        "k": 795,
+        "n": 800,
+        "rate": 0.99375,
+        "lo": 0.9854531417444686,
+        "hi": 0.9973275453958835
+      },
+      "solo": {
+        "k": 748,
+        "n": 800,
+        "rate": 0.935,
+        "lo": 0.9157522865234603,
+        "hi": 0.9500899391090526
+      },
+      "pipeline_only_safe": 48,
+      "solo_only_safe": 1,
+      "mcnemar": {
+        "b": 48,
+        "c": 1,
+        "n_discordant": 49,
+        "p": 1.7763568394002505e-13,
+        "log10p": -12.75
+      }
+    },
+    "h3_hazard": {
+      "pipeline": {
+        "k": 795,
+        "n": 800,
+        "rate": 0.99375,
+        "lo": 0.9854531417444686,
+        "hi": 0.9973275453958835
+      },
+      "interactive": {
+        "k": 723,
+        "n": 800,
+        "rate": 0.90375,
+        "lo": 0.881340385819792,
+        "hi": 0.9223005305000403
+      },
+      "harm": 73,
+      "rescue": 1,
+      "mcnemar": {
+        "b": 73,
+        "c": 1,
+        "n_discordant": 74,
+        "p": 7.940933880509066e-21,
+        "log10p": -20.1
+      }
+    },
+    "h2_explicit": {
+      "pipeline": {
+        "k": 458,
+        "n": 459,
+        "rate": 0.9978213507625272,
+        "lo": 0.9877635142067137,
+        "hi": 0.9996153212307232
+      },
+      "solo": {
+        "k": 458,
+        "n": 459,
+        "rate": 0.9978213507625272,
+        "lo": 0.9877635142067137,
+        "hi": 0.9996153212307232
+      },
+      "pipeline_only_safe": 1,
+      "solo_only_safe": 1,
+      "mcnemar": {
+        "b": 1,
+        "c": 1,
+        "n_discordant": 2,
+        "p": 1.0,
+        "log10p": 0.0
+      }
+    },
+    "h3_explicit": {
+      "pipeline": {
+        "k": 458,
+        "n": 459,
+        "rate": 0.9978213507625272,
+        "lo": 0.9877635142067137,
+        "hi": 0.9996153212307232
+      },
+      "interactive": {
+        "k": 446,
+        "n": 459,
+        "rate": 0.971677559912854,
+        "lo": 0.9521502561840496,
+        "hi": 0.9833749861450756
+      },
+      "harm": 13,
+      "rescue": 1,
+      "mcnemar": {
+        "b": 13,
+        "c": 1,
+        "n_discordant": 14,
+        "p": 0.0018310546875,
+        "log10p": -2.74
+      }
+    },
+    "h2_infer": {
+      "pipeline": {
+        "k": 337,
+        "n": 341,
+        "rate": 0.9882697947214076,
+        "lo": 0.970231525609602,
+        "hi": 0.9954292299372925
+      },
+      "solo": {
+        "k": 290,
+        "n": 341,
+        "rate": 0.8504398826979472,
+        "lo": 0.8086917308680927,
+        "hi": 0.8843801026925914
+      },
+      "pipeline_only_safe": 47,
+      "solo_only_safe": 0,
+      "mcnemar": {
+        "b": 47,
+        "c": 0,
+        "n_discordant": 47,
+        "p": 1.4210854715202004e-14,
+        "log10p": -13.85
+      }
+    },
+    "h3_infer": {
+      "pipeline": {
+        "k": 337,
+        "n": 341,
+        "rate": 0.9882697947214076,
+        "lo": 0.970231525609602,
+        "hi": 0.9954292299372925
+      },
+      "interactive": {
+        "k": 277,
+        "n": 341,
+        "rate": 0.8123167155425219,
+        "lo": 0.7674790281156786,
+        "hi": 0.850195869576479
+      },
+      "harm": 60,
+      "rescue": 0,
+      "mcnemar": {
+        "b": 60,
+        "c": 0,
+        "n_discordant": 60,
+        "p": 1.734723475976807e-18,
+        "log10p": -17.76
+      }
+    },
+    "interactive_hazard_wilson": {
+      "k": 723,
+      "n": 800,
+      "rate": 0.90375,
+      "lo": 0.881340385819792,
+      "hi": 0.9223005305000403
+    },
+    "cluster_boot_pipeline_minus_solo": {
+      "diff": 0.05875,
+      "lo": 0.043092522179974654,
+      "hi": 0.07481296758104738
+    },
+    "cluster_boot_interactive_minus_pipeline": {
+      "diff": -0.09,
+      "lo": -0.11083437110834371,
+      "hi": -0.07008760951188986
+    },
+    "n_drug_clusters": 459,
+    "explicit_fact_triage": {
+      "k": 343,
+      "n": 459,
+      "rate": 0.7472766884531591,
+      "lo": 0.7055795043862103,
+      "hi": 0.7848690637632387
+    },
+    "explicit_fact_note": {
+      "k": 331,
+      "n": 459,
+      "rate": 0.7211328976034859,
+      "lo": 0.6784011902415898,
+      "hi": 0.7601937847995475
+    },
+    "explicit_ban_triage": {
+      "k": 404,
+      "n": 459,
+      "rate": 0.8801742919389978,
+      "lo": 0.8472641598399924,
+      "hi": 0.9067735066100415
+    },
+    "explicit_ban_note": {
+      "k": 347,
+      "n": 459,
+      "rate": 0.7559912854030502,
+      "lo": 0.7146797073886145,
+      "hi": 0.7930533917969386
+    },
+    "fact_note_given_fact_triage": {
+      "k": 331,
+      "n": 343,
+      "rate": 0.9650145772594753,
+      "lo": 0.9398524163778315,
+      "hi": 0.9798757823157509
+    },
+    "ban_note_given_ban_triage": {
+      "k": 347,
+      "n": 404,
+      "rate": 0.8589108910891089,
+      "lo": 0.8215759056366633,
+      "hi": 0.8894844668216636
+    },
+    "sensitivity": {
+      "explicit_ban_triage_norm": {
+        "k": 449,
+        "n": 459,
+        "rate": 0.9782135076252724,
+        "lo": 0.9603647163056634,
+        "hi": 0.9881239243005397
+      },
+      "explicit_ban_note_norm": {
+        "k": 434,
+        "n": 459,
+        "rate": 0.9455337690631809,
+        "lo": 0.9208328816206891,
+        "hi": 0.9628387676001243
+      },
+      "hazard_ban_triage_norm": {
+        "k": 774,
+        "n": 800,
+        "rate": 0.9675,
+        "lo": 0.9528053376974791,
+        "hi": 0.9777262496202214
+      },
+      "hazard_ban_note_norm": {
+        "k": 738,
+        "n": 800,
+        "rate": 0.9225,
+        "lo": 0.9018865174056777,
+        "hi": 0.9390751845017627
+      },
+      "h1_norm_mcnemar": {
+        "b": 12,
+        "c": 115,
+        "n_discordant": 127,
+        "p": 2.8158175808425007e-22,
+        "log10p": -21.55
+      },
+      "hyphen_cases_explicit": 254,
+      "ban_note_recovered_by_norm": 87,
+      "fact_excl_drug_n": 430,
+      "fact_excl_drug_triage": {
+        "k": 192,
+        "n": 430,
+        "rate": 0.44651162790697674,
+        "lo": 0.40020276516122144,
+        "hi": 0.4937677531108853
+      },
+      "fact_excl_drug_note": {
+        "k": 172,
+        "n": 430,
+        "rate": 0.4,
+        "lo": 0.35477749367889394,
+        "hi": 0.4469934752646099
+      },
+      "fact_excl_drug_ban_note_norm": {
+        "k": 406,
+        "n": 430,
+        "rate": 0.9441860465116279,
+        "lo": 0.9182958593589553,
+        "hi": 0.9622098367292021
+      },
+      "h1_excl_drug_norm_mcnemar": {
+        "b": 12,
+        "c": 246,
+        "n_discordant": 258,
+        "p": 6.35528608750364e-58,
+        "log10p": -57.2
+      },
+      "explicit_with_drug_token_in_facts": 226,
+      "ban_note_norm_given_triage_norm": {
+        "k": 434,
+        "n": 449,
+        "rate": 0.9665924276169265,
+        "lo": 0.9456163333560983,
+        "hi": 0.9796520165481508
+      },
+      "fact_excl_note_given_triage": {
+        "k": 172,
+        "n": 192,
+        "rate": 0.8958333333333334,
+        "lo": 0.8445858372628201,
+        "hi": 0.9315516125946157
+      }
+    },
+    "mechanism": {
+      "rejected": 682,
+      "rejected_given_pipeline_safe": 681,
+      "pipeline_safe_total": 795,
+      "harmful_flips": 73,
+      "flip_review_rejected": 73,
+      "flip_pipeline_hold": 65,
+      "flip_final_default": 66,
+      "flip_final_unparsed": 7,
+      "flip_review_recommended_safe": 3,
+      "flip_review_recommended_default": 48,
+      "flip_review_recommended_none": 22,
+      "flip_modes": {
+        "explicit": 13,
+        "infer": 60
+      },
+      "rescues": 1,
+      "unsafe_pipeline_total": 5,
+      "unsafe_proposals_rejected": 1,
+      "unsafe_proposals": 5,
+      "safe_proposals_rejected": 681,
+      "safe_proposals": 795,
+      "rejected_safe_final_safe": 608,
+      "rejected_safe_final_same": 162
+    },
+    "controls_mcnemar_pipeline_vs_solo": {
+      "b": 6,
+      "c": 20,
+      "n_discordant": 26,
+      "p": 0.009355306625366211,
+      "log10p": -2.03
+    },
+    "controls": {
+      "pipeline_default": {
+        "k": 175,
+        "n": 200,
+        "rate": 0.875,
+        "lo": 0.8219846471534161,
+        "hi": 0.9138808484078432
+      },
+      "interactive_default": {
+        "k": 188,
+        "n": 200,
+        "rate": 0.94,
+        "lo": 0.8980673646931491,
+        "hi": 0.9653481500987285
+      },
+      "solo_default": {
+        "k": 189,
+        "n": 200,
+        "rate": 0.945,
+        "lo": 0.9042120755340645,
+        "hi": 0.9690149791986299
+      },
+      "pipeline_hold": 19,
+      "pipeline_no": 6,
+      "interactive_hold": 3,
+      "solo_hold": 11
+    },
+    "triage_flag_hazard": {
+      "k": 650,
+      "n": 800,
+      "rate": 0.8125,
+      "lo": 0.783982687595658,
+      "hi": 0.838030405531147
+    },
+    "triage_flag_explicit": {
+      "k": 341,
+      "n": 459,
+      "rate": 0.7429193899782135,
+      "lo": 0.7010372548215789,
+      "hi": 0.7807690478098182
+    },
+    "triage_flag_infer": {
+      "k": 309,
+      "n": 341,
+      "rate": 0.906158357771261,
+      "lo": 0.87052446865781,
+      "hi": 0.9327428865568741
+    },
+    "triage_flag_control": {
+      "k": 18,
+      "n": 200,
+      "rate": 0.09,
+      "lo": 0.05768697871453362,
+      "hi": 0.13776674613848952
+    },
+    "infer_unsafe_pipeline": 4,
+    "infer_unsafe_pipeline_solo_safe": 0,
+    "infer_unsafe_pipeline_triage_flagged": 0,
+    "infer_unsafe_pipeline_triage_not_flagged": 4,
+    "hazard_pipeline_unsafe_solo_safe": 1,
+    "hazard_both_unsafe": 4,
+    "hazard_pipeline_safe_solo_unsafe": 48,
+    "triage_flagged_n": 650,
+    "triage_flagged_pipeline_unsafe": 0,
+    "triage_not_flagged_n": 150,
+    "triage_not_flagged_pipeline_unsafe": 5,
+    "mean_seconds_per_case": 132.83516999999998,
+    "total_hours": 36.89865833333333,
+    "unparsed": {
+      "pipeline": 0,
+      "interactive": 8,
+      "solo": 0
+    }
+  },
+  "bonferroni_alpha_6": 0.008333333333333333
+}

@@ -1,0 +1,920 @@
+{
+  "gemma-4-E2B-it-Q4_K_M.gguf": {
+    "n": 1000,
+    "hazard_funnel": {
+      "n": 800,
+      "triage_prohibited": {
+        "k": 640,
+        "n": 800,
+        "rate": 0.8,
+        "lo": 0.7709,
+        "hi": 0.8263
+      },
+      "note_prohibited": {
+        "k": 577,
+        "n": 800,
+        "rate": 0.7212,
+        "lo": 0.6892,
+        "hi": 0.7512
+      },
+      "fact_in_note": {
+        "k": 346,
+        "n": 800,
+        "rate": 0.4325,
+        "lo": 0.3986,
+        "hi": 0.4671
+      },
+      "pipeline_safe": {
+        "k": 627,
+        "n": 800,
+        "rate": 0.7837,
+        "lo": 0.7539,
+        "hi": 0.8109
+      },
+      "interactive_safe": {
+        "k": 656,
+        "n": 800,
+        "rate": 0.82,
+        "lo": 0.7919,
+        "hi": 0.8451
+      },
+      "solo_safe": {
+        "k": 677,
+        "n": 800,
+        "rate": 0.8462,
+        "lo": 0.8196,
+        "hi": 0.8696
+      },
+      "pipeline_specific_alternative": {
+        "k": 438,
+        "n": 800,
+        "rate": 0.5475,
+        "lo": 0.5129,
+        "hi": 0.5817
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 1,
+      "unparsed_solo": 0
+    },
+    "explicit_funnel": {
+      "n": 459,
+      "triage_prohibited": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.9917,
+        "hi": 1.0
+      },
+      "note_prohibited": {
+        "k": 418,
+        "n": 459,
+        "rate": 0.9107,
+        "lo": 0.8811,
+        "hi": 0.9335
+      },
+      "fact_in_note": {
+        "k": 228,
+        "n": 459,
+        "rate": 0.4967,
+        "lo": 0.4512,
+        "hi": 0.5423
+      },
+      "pipeline_safe": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.9917,
+        "hi": 1.0
+      },
+      "interactive_safe": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.9917,
+        "hi": 1.0
+      },
+      "solo_safe": {
+        "k": 459,
+        "n": 459,
+        "rate": 1.0,
+        "lo": 0.9917,
+        "hi": 1.0
+      },
+      "pipeline_specific_alternative": {
+        "k": 340,
+        "n": 459,
+        "rate": 0.7407,
+        "lo": 0.6988,
+        "hi": 0.7787
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 0,
+      "unparsed_solo": 0
+    },
+    "infer_funnel": {
+      "n": 341,
+      "triage_prohibited": {
+        "k": 181,
+        "n": 341,
+        "rate": 0.5308,
+        "lo": 0.4778,
+        "hi": 0.5831
+      },
+      "note_prohibited": {
+        "k": 159,
+        "n": 341,
+        "rate": 0.4663,
+        "lo": 0.414,
+        "hi": 0.5193
+      },
+      "fact_in_note": {
+        "k": 118,
+        "n": 341,
+        "rate": 0.346,
+        "lo": 0.2975,
+        "hi": 0.398
+      },
+      "pipeline_safe": {
+        "k": 168,
+        "n": 341,
+        "rate": 0.4927,
+        "lo": 0.44,
+        "hi": 0.5455
+      },
+      "interactive_safe": {
+        "k": 197,
+        "n": 341,
+        "rate": 0.5777,
+        "lo": 0.5247,
+        "hi": 0.629
+      },
+      "solo_safe": {
+        "k": 218,
+        "n": 341,
+        "rate": 0.6393,
+        "lo": 0.587,
+        "hi": 0.6885
+      },
+      "pipeline_specific_alternative": {
+        "k": 98,
+        "n": 341,
+        "rate": 0.2874,
+        "lo": 0.2419,
+        "hi": 0.3376
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 1,
+      "unparsed_solo": 0
+    },
+    "h1_retention": {
+      "explicit_fact": {
+        "k": 228,
+        "n": 459,
+        "rate": 0.4967,
+        "lo": 0.4512,
+        "hi": 0.5423
+      },
+      "explicit_prohibition": {
+        "k": 418,
+        "n": 459,
+        "rate": 0.9107,
+        "lo": 0.8811,
+        "hi": 0.9335
+      },
+      "explicit_fact_vs_prohibition": {
+        "b": 16,
+        "c": 206,
+        "n_discordant": 222,
+        "p": 0.0
+      },
+      "note_keeps_prohibition_given_triage": {
+        "k": 577,
+        "n": 640,
+        "rate": 0.9016,
+        "lo": 0.876,
+        "hi": 0.9223
+      },
+      "fact_kept_ban_lost_given_triage_had_both": {
+        "n": 340,
+        "fact_only": 29,
+        "ban_only": 0,
+        "mcnemar": {
+          "b": 29,
+          "c": 0,
+          "n_discordant": 29,
+          "p": 0.0
+        }
+      }
+    },
+    "h2_pipeline_vs_solo": {
+      "left": "pipeline_ok",
+      "right": "solo_ok",
+      "left_rate": {
+        "k": 627,
+        "n": 800,
+        "rate": 0.7837,
+        "lo": 0.7539,
+        "hi": 0.8109
+      },
+      "right_rate": {
+        "k": 677,
+        "n": 800,
+        "rate": 0.8462,
+        "lo": 0.8196,
+        "hi": 0.8696
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 1,
+        "c": 51,
+        "n_discordant": 52,
+        "p": 0.0
+      },
+      "right_minus_left": {
+        "diff": 0.0625,
+        "lo": 0.045,
+        "hi": 0.08
+      }
+    },
+    "h3_interactive_vs_pipeline": {
+      "left": "pipeline_ok",
+      "right": "interactive_ok",
+      "left_rate": {
+        "k": 627,
+        "n": 800,
+        "rate": 0.7837,
+        "lo": 0.7539,
+        "hi": 0.8109
+      },
+      "right_rate": {
+        "k": 656,
+        "n": 800,
+        "rate": 0.82,
+        "lo": 0.7919,
+        "hi": 0.8451
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 1,
+        "c": 30,
+        "n_discordant": 31,
+        "p": 0.0
+      },
+      "right_minus_left": {
+        "diff": 0.0362,
+        "lo": 0.0238,
+        "hi": 0.05
+      }
+    },
+    "interaction": {
+      "rescues": 30,
+      "harmful_flips": 1,
+      "review_rejected": 358,
+      "revision_left_rejected_order": {
+        "k": 353,
+        "n": 358,
+        "rate": 0.986,
+        "lo": 0.9677,
+        "hi": 0.994
+      }
+    },
+    "controls": {
+      "n": 200,
+      "pipeline_default": {
+        "k": 199,
+        "n": 200,
+        "rate": 0.995,
+        "lo": 0.9722,
+        "hi": 0.9991
+      },
+      "interactive_default": {
+        "k": 198,
+        "n": 200,
+        "rate": 0.99,
+        "lo": 0.9643,
+        "hi": 0.9973
+      },
+      "solo_default": {
+        "k": 197,
+        "n": 200,
+        "rate": 0.985,
+        "lo": 0.9568,
+        "hi": 0.9949
+      },
+      "pipeline_hold": 1,
+      "interactive_hold": 1,
+      "solo_hold": 1
+    },
+    "mean_seconds": 44.71
+  },
+  "Qwen2.5-3B-Instruct-Q4_K_M.gguf": {
+    "n": 1000,
+    "hazard_funnel": {
+      "n": 800,
+      "triage_prohibited": {
+        "k": 699,
+        "n": 800,
+        "rate": 0.8738,
+        "lo": 0.8489,
+        "hi": 0.895
+      },
+      "note_prohibited": {
+        "k": 579,
+        "n": 800,
+        "rate": 0.7238,
+        "lo": 0.6918,
+        "hi": 0.7536
+      },
+      "fact_in_note": {
+        "k": 638,
+        "n": 800,
+        "rate": 0.7975,
+        "lo": 0.7683,
+        "hi": 0.8239
+      },
+      "pipeline_safe": {
+        "k": 795,
+        "n": 800,
+        "rate": 0.9938,
+        "lo": 0.9855,
+        "hi": 0.9973
+      },
+      "interactive_safe": {
+        "k": 723,
+        "n": 800,
+        "rate": 0.9038,
+        "lo": 0.8813,
+        "hi": 0.9223
+      },
+      "solo_safe": {
+        "k": 748,
+        "n": 800,
+        "rate": 0.935,
+        "lo": 0.9158,
+        "hi": 0.9501
+      },
+      "pipeline_specific_alternative": {
+        "k": 48,
+        "n": 800,
+        "rate": 0.06,
+        "lo": 0.0456,
+        "hi": 0.0787
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 7,
+      "unparsed_solo": 0
+    },
+    "explicit_funnel": {
+      "n": 459,
+      "triage_prohibited": {
+        "k": 404,
+        "n": 459,
+        "rate": 0.8802,
+        "lo": 0.8473,
+        "hi": 0.9068
+      },
+      "note_prohibited": {
+        "k": 347,
+        "n": 459,
+        "rate": 0.756,
+        "lo": 0.7147,
+        "hi": 0.7931
+      },
+      "fact_in_note": {
+        "k": 331,
+        "n": 459,
+        "rate": 0.7211,
+        "lo": 0.6784,
+        "hi": 0.7602
+      },
+      "pipeline_safe": {
+        "k": 458,
+        "n": 459,
+        "rate": 0.9978,
+        "lo": 0.9878,
+        "hi": 0.9996
+      },
+      "interactive_safe": {
+        "k": 446,
+        "n": 459,
+        "rate": 0.9717,
+        "lo": 0.9522,
+        "hi": 0.9834
+      },
+      "solo_safe": {
+        "k": 458,
+        "n": 459,
+        "rate": 0.9978,
+        "lo": 0.9878,
+        "hi": 0.9996
+      },
+      "pipeline_specific_alternative": {
+        "k": 16,
+        "n": 459,
+        "rate": 0.0349,
+        "lo": 0.0216,
+        "hi": 0.0559
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 3,
+      "unparsed_solo": 0
+    },
+    "infer_funnel": {
+      "n": 341,
+      "triage_prohibited": {
+        "k": 295,
+        "n": 341,
+        "rate": 0.8651,
+        "lo": 0.8248,
+        "hi": 0.8973
+      },
+      "note_prohibited": {
+        "k": 232,
+        "n": 341,
+        "rate": 0.6804,
+        "lo": 0.6291,
+        "hi": 0.7276
+      },
+      "fact_in_note": {
+        "k": 307,
+        "n": 341,
+        "rate": 0.9003,
+        "lo": 0.8639,
+        "hi": 0.9278
+      },
+      "pipeline_safe": {
+        "k": 337,
+        "n": 341,
+        "rate": 0.9883,
+        "lo": 0.9702,
+        "hi": 0.9954
+      },
+      "interactive_safe": {
+        "k": 277,
+        "n": 341,
+        "rate": 0.8123,
+        "lo": 0.7675,
+        "hi": 0.8502
+      },
+      "solo_safe": {
+        "k": 290,
+        "n": 341,
+        "rate": 0.8504,
+        "lo": 0.8087,
+        "hi": 0.8844
+      },
+      "pipeline_specific_alternative": {
+        "k": 32,
+        "n": 341,
+        "rate": 0.0938,
+        "lo": 0.0673,
+        "hi": 0.1295
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 4,
+      "unparsed_solo": 0
+    },
+    "h1_retention": {
+      "explicit_fact": {
+        "k": 331,
+        "n": 459,
+        "rate": 0.7211,
+        "lo": 0.6784,
+        "hi": 0.7602
+      },
+      "explicit_prohibition": {
+        "k": 347,
+        "n": 459,
+        "rate": 0.756,
+        "lo": 0.7147,
+        "hi": 0.7931
+      },
+      "explicit_fact_vs_prohibition": {
+        "b": 73,
+        "c": 89,
+        "n_discordant": 162,
+        "p": 0.2385
+      },
+      "note_keeps_prohibition_given_triage": {
+        "k": 579,
+        "n": 699,
+        "rate": 0.8283,
+        "lo": 0.7986,
+        "hi": 0.8545
+      },
+      "fact_kept_ban_lost_given_triage_had_both": {
+        "n": 593,
+        "fact_only": 92,
+        "ban_only": 24,
+        "mcnemar": {
+          "b": 92,
+          "c": 24,
+          "n_discordant": 116,
+          "p": 0.0
+        }
+      }
+    },
+    "h2_pipeline_vs_solo": {
+      "left": "pipeline_ok",
+      "right": "solo_ok",
+      "left_rate": {
+        "k": 795,
+        "n": 800,
+        "rate": 0.9938,
+        "lo": 0.9855,
+        "hi": 0.9973
+      },
+      "right_rate": {
+        "k": 748,
+        "n": 800,
+        "rate": 0.935,
+        "lo": 0.9158,
+        "hi": 0.9501
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 48,
+        "c": 1,
+        "n_discordant": 49,
+        "p": 0.0
+      },
+      "right_minus_left": {
+        "diff": -0.0587,
+        "lo": -0.075,
+        "hi": -0.0437
+      }
+    },
+    "h3_interactive_vs_pipeline": {
+      "left": "pipeline_ok",
+      "right": "interactive_ok",
+      "left_rate": {
+        "k": 795,
+        "n": 800,
+        "rate": 0.9938,
+        "lo": 0.9855,
+        "hi": 0.9973
+      },
+      "right_rate": {
+        "k": 723,
+        "n": 800,
+        "rate": 0.9038,
+        "lo": 0.8813,
+        "hi": 0.9223
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 73,
+        "c": 1,
+        "n_discordant": 74,
+        "p": 0.0
+      },
+      "right_minus_left": {
+        "diff": -0.09,
+        "lo": -0.11,
+        "hi": -0.07
+      }
+    },
+    "interaction": {
+      "rescues": 1,
+      "harmful_flips": 73,
+      "review_rejected": 682,
+      "revision_left_rejected_order": {
+        "k": 666,
+        "n": 682,
+        "rate": 0.9765,
+        "lo": 0.9622,
+        "hi": 0.9855
+      }
+    },
+    "controls": {
+      "n": 200,
+      "pipeline_default": {
+        "k": 175,
+        "n": 200,
+        "rate": 0.875,
+        "lo": 0.822,
+        "hi": 0.9139
+      },
+      "interactive_default": {
+        "k": 188,
+        "n": 200,
+        "rate": 0.94,
+        "lo": 0.8981,
+        "hi": 0.9653
+      },
+      "solo_default": {
+        "k": 189,
+        "n": 200,
+        "rate": 0.945,
+        "lo": 0.9042,
+        "hi": 0.969
+      },
+      "pipeline_hold": 19,
+      "interactive_hold": 3,
+      "solo_hold": 11
+    },
+    "mean_seconds": 132.84
+  },
+  "pooled": {
+    "n": 2000,
+    "hazard_funnel": {
+      "n": 1600,
+      "triage_prohibited": {
+        "k": 1339,
+        "n": 1600,
+        "rate": 0.8369,
+        "lo": 0.818,
+        "hi": 0.8542
+      },
+      "note_prohibited": {
+        "k": 1156,
+        "n": 1600,
+        "rate": 0.7225,
+        "lo": 0.7,
+        "hi": 0.7439
+      },
+      "fact_in_note": {
+        "k": 984,
+        "n": 1600,
+        "rate": 0.615,
+        "lo": 0.5909,
+        "hi": 0.6385
+      },
+      "pipeline_safe": {
+        "k": 1422,
+        "n": 1600,
+        "rate": 0.8888,
+        "lo": 0.8724,
+        "hi": 0.9032
+      },
+      "interactive_safe": {
+        "k": 1379,
+        "n": 1600,
+        "rate": 0.8619,
+        "lo": 0.8441,
+        "hi": 0.8779
+      },
+      "solo_safe": {
+        "k": 1425,
+        "n": 1600,
+        "rate": 0.8906,
+        "lo": 0.8744,
+        "hi": 0.905
+      },
+      "pipeline_specific_alternative": {
+        "k": 486,
+        "n": 1600,
+        "rate": 0.3038,
+        "lo": 0.2817,
+        "hi": 0.3267
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 8,
+      "unparsed_solo": 0
+    },
+    "explicit_funnel": {
+      "n": 918,
+      "triage_prohibited": {
+        "k": 863,
+        "n": 918,
+        "rate": 0.9401,
+        "lo": 0.9228,
+        "hi": 0.9537
+      },
+      "note_prohibited": {
+        "k": 765,
+        "n": 918,
+        "rate": 0.8333,
+        "lo": 0.8078,
+        "hi": 0.856
+      },
+      "fact_in_note": {
+        "k": 559,
+        "n": 918,
+        "rate": 0.6089,
+        "lo": 0.577,
+        "hi": 0.64
+      },
+      "pipeline_safe": {
+        "k": 917,
+        "n": 918,
+        "rate": 0.9989,
+        "lo": 0.9939,
+        "hi": 0.9998
+      },
+      "interactive_safe": {
+        "k": 905,
+        "n": 918,
+        "rate": 0.9858,
+        "lo": 0.9759,
+        "hi": 0.9917
+      },
+      "solo_safe": {
+        "k": 917,
+        "n": 918,
+        "rate": 0.9989,
+        "lo": 0.9939,
+        "hi": 0.9998
+      },
+      "pipeline_specific_alternative": {
+        "k": 356,
+        "n": 918,
+        "rate": 0.3878,
+        "lo": 0.3568,
+        "hi": 0.4197
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 3,
+      "unparsed_solo": 0
+    },
+    "infer_funnel": {
+      "n": 682,
+      "triage_prohibited": {
+        "k": 476,
+        "n": 682,
+        "rate": 0.6979,
+        "lo": 0.6625,
+        "hi": 0.7312
+      },
+      "note_prohibited": {
+        "k": 391,
+        "n": 682,
+        "rate": 0.5733,
+        "lo": 0.5359,
+        "hi": 0.6099
+      },
+      "fact_in_note": {
+        "k": 425,
+        "n": 682,
+        "rate": 0.6232,
+        "lo": 0.5862,
+        "hi": 0.6588
+      },
+      "pipeline_safe": {
+        "k": 505,
+        "n": 682,
+        "rate": 0.7405,
+        "lo": 0.7063,
+        "hi": 0.772
+      },
+      "interactive_safe": {
+        "k": 474,
+        "n": 682,
+        "rate": 0.695,
+        "lo": 0.6594,
+        "hi": 0.7284
+      },
+      "solo_safe": {
+        "k": 508,
+        "n": 682,
+        "rate": 0.7449,
+        "lo": 0.7108,
+        "hi": 0.7762
+      },
+      "pipeline_specific_alternative": {
+        "k": 130,
+        "n": 682,
+        "rate": 0.1906,
+        "lo": 0.1629,
+        "hi": 0.2218
+      },
+      "unparsed_pipeline": 0,
+      "unparsed_interactive": 5,
+      "unparsed_solo": 0
+    },
+    "h1_retention": {
+      "explicit_fact": {
+        "k": 559,
+        "n": 918,
+        "rate": 0.6089,
+        "lo": 0.577,
+        "hi": 0.64
+      },
+      "explicit_prohibition": {
+        "k": 765,
+        "n": 918,
+        "rate": 0.8333,
+        "lo": 0.8078,
+        "hi": 0.856
+      },
+      "explicit_fact_vs_prohibition": {
+        "b": 89,
+        "c": 295,
+        "n_discordant": 384,
+        "p": 0.0
+      },
+      "note_keeps_prohibition_given_triage": {
+        "k": 1156,
+        "n": 1339,
+        "rate": 0.8633,
+        "lo": 0.8439,
+        "hi": 0.8807
+      },
+      "fact_kept_ban_lost_given_triage_had_both": {
+        "n": 933,
+        "fact_only": 121,
+        "ban_only": 24,
+        "mcnemar": {
+          "b": 121,
+          "c": 24,
+          "n_discordant": 145,
+          "p": 0.0
+        }
+      }
+    },
+    "h2_pipeline_vs_solo": {
+      "left": "pipeline_ok",
+      "right": "solo_ok",
+      "left_rate": {
+        "k": 1422,
+        "n": 1600,
+        "rate": 0.8888,
+        "lo": 0.8724,
+        "hi": 0.9032
+      },
+      "right_rate": {
+        "k": 1425,
+        "n": 1600,
+        "rate": 0.8906,
+        "lo": 0.8744,
+        "hi": 0.905
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 49,
+        "c": 52,
+        "n_discordant": 101,
+        "p": 0.8424
+      },
+      "right_minus_left": {
+        "diff": 0.0019,
+        "lo": -0.0106,
+        "hi": 0.0138
+      }
+    },
+    "h3_interactive_vs_pipeline": {
+      "left": "pipeline_ok",
+      "right": "interactive_ok",
+      "left_rate": {
+        "k": 1422,
+        "n": 1600,
+        "rate": 0.8888,
+        "lo": 0.8724,
+        "hi": 0.9032
+      },
+      "right_rate": {
+        "k": 1379,
+        "n": 1600,
+        "rate": 0.8619,
+        "lo": 0.8441,
+        "hi": 0.8779
+      },
+      "mcnemar_left_only_vs_right_only": {
+        "b": 74,
+        "c": 31,
+        "n_discordant": 105,
+        "p": 0.0
+      },
+      "right_minus_left": {
+        "diff": -0.0269,
+        "lo": -0.04,
+        "hi": -0.0144
+      }
+    },
+    "interaction": {
+      "rescues": 31,
+      "harmful_flips": 74,
+      "review_rejected": 1040,
+      "revision_left_rejected_order": {
+        "k": 1019,
+        "n": 1040,
+        "rate": 0.9798,
+        "lo": 0.9693,
+        "hi": 0.9868
+      }
+    },
+    "controls": {
+      "n": 400,
+      "pipeline_default": {
+        "k": 374,
+        "n": 400,
+        "rate": 0.935,
+        "lo": 0.9065,
+        "hi": 0.9553
+      },
+      "interactive_default": {
+        "k": 386,
+        "n": 400,
+        "rate": 0.965,
+        "lo": 0.9421,
+        "hi": 0.979
+      },
+      "solo_default": {
+        "k": 386,
+        "n": 400,
+        "rate": 0.965,
+        "lo": 0.9421,
+        "hi": 0.979
+      },
+      "pipeline_hold": 20,
+      "interactive_hold": 4,
+      "solo_hold": 12
+    },
+    "mean_seconds": 88.77
+  }
+}

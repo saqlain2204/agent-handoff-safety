@@ -1,0 +1,9 @@
+{
+  "retrieved_utc": "2026-10-07T17:20:45+00:00",
+  "source": "https://api.fda.gov/drug/label.json",
+  "n": 1000,
+  "explicit": 459,
+  "infer": 341,
+  "control": 200,
+  "note": "Chart sentences are verbatim openFDA label text. Vignettes use one fixed template."
+}
